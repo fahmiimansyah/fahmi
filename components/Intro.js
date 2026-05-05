@@ -22,20 +22,20 @@ export default function Intro({ onFinish }) {
 useEffect(() => {
   let timer;
   if (index < words.length - 1) {
-    timer = setTimeout(() => setIndex(index + 1), 300);
+    timer = setTimeout(() => setIndex(index + 1), 250);
   } else {
-    timer = setTimeout(onFinish, 1800);
+    timer = setTimeout(onFinish, 1500);
   }
   return () => clearTimeout(timer);
 }, [index, onFinish]);
 
   return (
-    <div className="fixed inset-0 bg-white flex items-center justify-center">
+    <div className="fixed inset-0 bg-black flex items-center justify-center">
       <AnimatePresence mode="wait">
         <motion.h1
           key={words[index]}
           transition={{ duration: 0.1 }}
-          className="text-black text-4xl md:text-6xl font-medium tracking-wide"
+          className="text-white text-4xl md:text-6xl font-medium tracking-wide"
         >
           {words[index]}
         </motion.h1>
