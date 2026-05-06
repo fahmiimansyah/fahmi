@@ -29,12 +29,11 @@ export default function Home() {
 
   const items = [
     {
-      label: "About",
+      label: "About Me",
       bgColor: "#1B1722",
       textColor: "#fff",
       links: [
-        { label: "Company", href: "/about" },
-        { label: "Careers", href: "/about" }
+        { label: "My Story", href: "/about" }
       ]
     },
     {
@@ -260,11 +259,23 @@ export default function Home() {
     </motion.div>
   </div>
 </section>
+<footer className="w-full border-t border-white/10 py-8 bg-slate-950/50 backdrop-blur-md mt-auto">
+        <div className="max-w-4xl mx-auto px-6 text-center flex flex-col items-center justify-center space-y-2">
+          <p className="text-white/60 text-sm md:text-base font-medium tracking-wide">
+            Crafted with passion by Fahmi Imansyah
+          </p>
+          <p className="text-white/40 text-xs md:text-sm">
+            © {new Date().getFullYear()} All rights reserved. Built with Next.js & Framer Motion.
+          </p>
+        </div>
+      </footer>
             </>
           
           </motion.div>
         )}
       </AnimatePresence>
+      
     </motion.div>
+    
   )
 }
