@@ -14,12 +14,11 @@ export default function Projects() {
       ]
     },
     {
-      label: "Projects",
+      label: "Home",
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Featured", href: "/#projects" },
-        { label: "Case Studies", href: "/projects" }
+        { label: "Back To Home", href: "/" }
       ]
     },
     {
@@ -27,9 +26,7 @@ export default function Projects() {
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Email", href: "/contact" },
-        { label: "Twitter", href: "/contact" },
-        { label: "LinkedIn", href: "/contact" }
+        { label: "Let's Connect", href: "/contact" }
       ]
     }
   ];
@@ -43,7 +40,7 @@ export default function Projects() {
     >
       <Navbar
         className="!fixed !top-6 left-1/2 -translate-x-1/2 z-50"
-        logo={'fahmi'}
+        logo={'/iconF.svg'}
         items={items}
         baseColor="#fff"
         menuColor="#000"
@@ -88,9 +85,11 @@ export default function Projects() {
               {/* Info Project */}
               <div className="md:w-1/3">
                 <span className="px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-500/30 text-xs font-bold tracking-wider uppercase text-blue-300">Full-Stack E-Commerce</span>
-                <h2 className="text-3xl font-bold text-white mt-4 mb-2">NaXaShop</h2>
-                <p className="text-white/60 mb-6">Replika dari web top-up CodaShop. Kawah candradimuka tempat logika Backend gua bener-bener dibanting dan dibentuk.</p>
-                
+                <h2 className="text-3xl font-bold text-white mt-4 mb-2">Copy CodaShop</h2>
+                <p className="text-white/60 mb-6">
+  Replika dari web top-up CodaShop. Kawah candradimuka tempat logika Backend gua bener-bener dibanting dan dibentuk.<br /><br />
+  <i className="text-yellow-400/80 text-sm">*Belum di-deploy ke live server karena project ini ngandung Backend (Node.js & MySQL) yang butuh setup hosting VPS/Cloud khusus. Saat ini masih berjalan mulus di Localhost.</i>
+</p>                
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1 bg-green-500/20 border border-green-500/30 rounded-lg text-sm text-green-300 font-medium">Node.js</span>
                   <span className="px-3 py-1 bg-orange-500/20 border border-orange-500/30 rounded-lg text-sm text-orange-300 font-medium">MySQL</span>

@@ -5,19 +5,19 @@ export default function FeaturedProjects() {
   // Data dummy buat project lu (Nanti lu ganti sama NaXaShop atau project HSR)
   const projects = [
     {
-      title: "NaXaShop",
+      title: "Copy CodaShop",
       description: "Platform top-up game dengan UI/UX yang mulus dan proses checkout yang cepat.",
-      tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+      tech: ["HTML", "CSS", "JavaScript", "Node.js", "MySQL", "Express.js"],
       link: "#",
       // Gambar sementara, ganti sama path screenshot lu nanti
-      imgSrc: "/path-to-your-naxashop-image.jpg" 
+      imgSrc: "/sscoda.png" 
     },
     {
       title: "Honkai Star Rail Guide",
       description: "Web interaktif buat panduan build karakter HSR. Fiturnya lengkap dan responsif.",
-      tech: ["React", "CSS Modules"],
-      link: "#",
-      imgSrc: "/path-to-your-hsr-image.jpg"
+      tech: ["HTML", "CSS", "JavaScript"],
+      link: "https://fahmiimansyah.github.io/Build-Cyrene-HSR",
+      imgSrc: "/ssCyrene.png"
     }
   ]
 
@@ -72,15 +72,15 @@ export default function FeaturedProjects() {
           <motion.div 
             key={index}
             variants={cardVariants}
-            whileHover={{ y: -10 }} // Efek ngambang pas dihover
             className="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden hover:border-white/30 transition-all duration-300"
           >
             {/* Bagian Gambar */}
             <div className="relative h-64 overflow-hidden bg-gray-800">
                 {/* Ganti ini sama tag <img /> atau <Image /> dari Next.js nanti */}
-              <div className="absolute inset-0 flex items-center justify-center text-white/50 bg-neutral-800/80 group-hover:scale-105 transition-transform duration-500">
-                [ Screenshot Project: {project.title} ]
-              </div>
+              <img  className="absolute inset-0 flex items-center justify-center text-white/50 bg-neutral-800/80 group-hover:scale-105 transition-transform duration-500"
+                src={project.imgSrc}
+                alt={project.title} />
+              
               
               {/* Overlay pas di-hover */}
               <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">

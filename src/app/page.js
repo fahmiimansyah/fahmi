@@ -1,11 +1,10 @@
 "use client"
-import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion"
+import { motion, AnimatePresence, useScroll } from "framer-motion"
 import Navbar from "../../components/Navbar"
 import ScrollReveal from '../../components/ScrollReveal';
 import Hero from "../../components/Hero"
 import Intro from "../../components/Intro"
 import { useState, useEffect } from "react"
-// MagicRings udah dipensiunkan wkwk
 import fotoProfil from '../../public/Picsart_26-05-04_12-44-57-908.png';
 import ProfileCard from "../../components/profileCard"
 import TechStack from '../../components/TechStack'
@@ -13,7 +12,6 @@ import FeaturedProjects from "../../components/Project";
 
 export default function Home() {
   const { scrollY } = useScroll();
-  // ringOpacity udah dihapus biar gak menuh-menuhin memori
   const [isMounted, setIsMounted] = useState(false);
   const [introDone, setIntroDone] = useState(false); 
   useEffect(() => {
@@ -37,11 +35,10 @@ export default function Home() {
       ]
     },
     {
-      label: "Projects",
+      label: "E-Learning Journey",
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Featured", href: "/projects" },
         { label: "Case Studies", href: "/projects" }
       ]
     },
@@ -50,9 +47,7 @@ export default function Home() {
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Email", href: "/contact" },
-        { label: "Twitter", href: "/contact" },
-        { label: "LinkedIn", href: "/contact" }
+        { label: "Lets Connect", href: "/contact" }
       ]
     }
   ]
@@ -82,7 +77,7 @@ export default function Home() {
             {/* NAVBAR */}
             <Navbar
               className="!fixed !top-6 left-1/2 -translate-x-1/2 z-50"
-              logo={'fahmi'}
+              logo={'/iconF.svg'}
               items={items}
               baseColor="#fff"
               menuColor="#000"
@@ -92,8 +87,6 @@ export default function Home() {
 
             <section className="relative min-h-screen flex items-center justify-center pt-32 md:pt-0 overflow-hidden">
               
-              {/* MagicRings Component udah kita buang dari sini biar enteng! */}
-
               <div className="z-10 max-w-5xl w-full mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center justify-between">
                 
                 {/* --- BAGIAN KIRI: TEKS --- */}
@@ -153,17 +146,16 @@ export default function Home() {
                   className="relative z-10 w-full md:w-[40%] flex justify-center mt-12 md:mt-0 md:-ml-24"
                 >
                   <ProfileCard
-                    name="Fahmi Imansyah"
+                    name="Fahmi"
                     title="Front-End Developer"
-                    handle="javicodes"
+                    handle="Fahmi"
                     status="Online"
-                    contactText="Contact Me"
+                    contactText=".dev"
                     priority
                     avatarUrl={fotoProfil.src}
-                    showUserInfo={false}
+                    showUserInfo={true}
                     enableTilt={true}
                     enableMobileTilt={false}
-                    onContactClick={() => console.log('Contact clicked')}
                     behindGlowColor="rgba(125, 190, 255, 0.67)"
                     iconUrl="/code-icon.svg"
                     behindGlowEnabled={false} 

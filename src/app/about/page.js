@@ -1,10 +1,9 @@
 "use client"
 import { motion } from "framer-motion"
-import Navbar from "../../../components/Navbar" // Sesuaikan path-nya
+import Navbar from "../../../components/Navbar"
 import { SiJavascript, SiPython, SiCplusplus } from "react-icons/si"
 import { FiSearch, FiTerminal, FiCheckCircle, FiMessageSquare } from "react-icons/fi"
-// Import foto profil yang udah lu pake di halaman Home
-import fotoProfil from '../../../public/fahmi.png';
+import fotoProfil from '../../../public/Fahmikece.jpg';
 
 export default function About() {
   const items = [
@@ -17,11 +16,10 @@ export default function About() {
       ]
     },
     {
-      label: "Projects",
+      label: "E-Learning Journey",
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Featured", href: "/projects" },
         { label: "Case Studies", href: "/projects" }
       ]
     },
@@ -30,9 +28,7 @@ export default function About() {
       bgColor: "#2F293A",
       textColor: "#fff",
       links: [
-        { label: "Email", href: "/contact" },
-        { label: "Twitter", href: "/contact" },
-        { label: "LinkedIn", href: "/contact" }
+        { label: "Let's Connect", href: "/contact" }
       ]
     }
   ];
@@ -46,7 +42,7 @@ export default function About() {
     >
       <Navbar
         className="!fixed !top-6 left-1/2 -translate-x-1/2 z-50"
-        logo={'fahmi'}
+        logo={'/iconF.svg'}
         items={items}
         baseColor="#fff"
         menuColor="#000"

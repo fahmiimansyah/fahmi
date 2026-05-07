@@ -166,15 +166,16 @@ const CardNav = ({
           <div className="logo-container flex items-center md:absolute md:left-1/2 md:top-1/2 md:-translate-x-1/2 md:-translate-y-1/2 order-1 md:order-none">
             <img src={logo} alt={logoAlt} className="logo h-[28px]" />
           </div>
-
-          <button
-            type="button"
-            className="card-nav-cta-button hidden md:inline-flex border-0 rounded-[calc(0.75rem-0.2rem)] px-4 items-center h-full font-medium cursor-pointer transition-colors duration-300"
-            style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
-          >
-            Get Started
-          </button>
+        {/* Langsung pake Link aja, gak usah pake button di dalemnya */}
+        <Link 
+          href="/contact" 
+          className="card-nav-cta-button hidden md:inline-flex border-0 rounded-[calc(0.75rem-0.2rem)] px-4 items-center h-full font-medium cursor-pointer transition-colors duration-300"
+          style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+        >
+          Let's Talk
+        </Link>
         </div>
+        
 
         <div
           className={`card-nav-content absolute left-0 right-0 top-[60px] bottom-0 p-2 flex flex-col items-stretch gap-2 justify-start z-[1] ${
