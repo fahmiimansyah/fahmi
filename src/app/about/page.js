@@ -94,6 +94,7 @@ export default function About() {
               <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full scale-90"></div>
               
               <img 
+                priority
                 src={fotoProfil.src} 
                 alt="Fahmi Imansyah" 
                 className="relative z-10 w-64 md:w-full max-w-[300px] aspect-square object-cover rounded-3xl border-2 border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)] rotate-3 hover:rotate-0 transition-transform duration-500"
