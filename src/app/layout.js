@@ -7,6 +7,9 @@ const outfit = Outfit({ subsets: ['latin'] })
 export const metadata = {
   title: "Fahmi Imansyah | Full-Stack Web Developer",
   description: "Portofolio digital Fahmi Imansyah, seorang self-taught Web Developer. Membangun pengalaman digital interaktif dengan Frontend & Backend (Next.js, Node.js, MySQL).",
+  verification: {
+  google: "ZulzsuZvqaDUX0zpicEwgyqSZNP3wANZbCh5Rc8J4Sc",
+  },
   keywords: ["Fahmi Imansyah", "Web Developer Indonesia", "Frontend Developer", "Backend Developer", "Portofolio Programmer", "Next.js Developer"],
   authors: [{ name: "Fahmi Imansyah" }],
   creator: "Fahmi Imansyah",
@@ -17,7 +20,6 @@ export const metadata = {
   openGraph: {
     title: "Fahmi Imansyah | Web Developer Portfolio",
     description: "Seni dalam Logika. Jelajahi case studies dan perjalanan coding gua di sini.",
-    
     // 🔥 INI JUGA GANTI BIAR PREVIEW SHARE-NYA PAS
     url: "https://fahmiimansyah.my.id", 
     
